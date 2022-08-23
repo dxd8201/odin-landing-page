@@ -1,49 +1,148 @@
+/* GENERAL CSS */
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient( purple, #0d1218 25%);
+}
+
+
+/* ****************  */
+/*   HERO SECTION    */
+/* ****************  */
+
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(121, 64, 121);
+    padding-bottom: 26.6rem;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 4.8rem;
+    position: relative;
     /* background-color: rgb(121, 64, 121); */
 }
 
+.header:before {
+    content : "";
+    position: absolute;
+    left    : 12%;
+    bottom  : 0;
+    height  : .1rem;
+    width   : 75%;  /* or 100px */
+    border-bottom: 1px solid white;
+  }
+
 .logo {
-    width: 250px;
+    width: 25rem;
     height: auto;
 }
 
-.header-link-container {
+.header-nav-container {
+    display: flex;
+}
+
+ul.header-nav-list {
+    list-style-type: none;
+}
+
+.header-nav-list {
     display: flex;
     justify-content: space-around;
-    width: 500px;
-    height: auto;
-    /* background-color: red; */
+    align-items: center;
+    gap: 1.2rem;
 }
 
 .header-link {
     text-decoration: none;
-    color: gold;
+    color: goldenrod;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
+    font-size: 2.4rem;
 }
 
-.landing {
+.landing-container {
     display: flex;
     justify-content: center;
+    gap: 4rem;
+    margin-top: 3.2rem;
+    max-width: 130rem;
+    padding: 0 4.8rem;
+}
+
+.landing-text {
+    width: 64rem;
+}
+
+.landing-text h1 {
+    font-size: 4.8rem;
+    font-weight: bolder;
+    padding: 1.2rem;
+    color: goldenrod;
+}
+
+.landing-text p {
+    font-size: 1.8rem;
+    padding: 0 1.2rem;
+    color: #fff
+}
+
+.cta-btn {
+    background-color: goldenrod;
+    border-radius: 5px;
+    margin: 1.2rem;
+    padding: .6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3.2rem;
+    border: none;
+    text-align: center;
+}
+
+.landing-img {
+    display: flex;
+    flex: 2 1 0;
+
 }
 
 .angus {
-    width: 132px;
+    width: 32.2rem;
     height: auto;
+    
+}
+
+/* ****************  */
+/*   INFO SECTION    */
+/* ****************  */
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info h1 {
+    color: goldenrod;
+    font-size: 3.6rem;
+    font-weight: bolder;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-img {
+}
+
+.card-text {
+    color: #fff;
 }
