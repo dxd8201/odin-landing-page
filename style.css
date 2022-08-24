@@ -11,15 +11,23 @@ html {
 
 body {
     background: linear-gradient( purple, #0d1218 25%);
+    letter-spacing: .8px;
 }
 
+/* ****************  */
+/*   GENERAL         */
+/* ****************  */
+
+.margin-top {
+    margin-top: 3.2rem;
+}
 
 /* ****************  */
 /*   HERO SECTION    */
 /* ****************  */
 
 .hero {
-    padding-bottom: 26.6rem;
+    padding-bottom: 5.6rem;
 }
 
 .header {
@@ -72,8 +80,9 @@ ul.header-nav-list {
 .landing-container {
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 3.2rem;
+    align-items: center;
+    gap: 22rem;
+    margin: 3.2rem auto 0 auto;
     max-width: 130rem;
     padding: 0 4.8rem;
 }
@@ -95,6 +104,24 @@ ul.header-nav-list {
     color: #fff
 }
 
+.quote {
+    display: flex;
+    flex-direction: column;
+    font-size: 12rem;
+    color: #fff;
+    align-items: flex-end;
+    
+}
+
+.quote p {
+    font-style: italic;
+}
+
+.quote span {
+    font-size: 6rem;
+
+}
+
 .cta-btn {
     background-color: goldenrod;
     border-radius: 5px;
@@ -102,15 +129,17 @@ ul.header-nav-list {
     padding: .6rem;
     font-size: 1.6rem;
     font-weight: bold;
-    margin-top: 3.2rem;
     border: none;
     text-align: center;
+    box-sizing: border-box;
+}
+
+.landing-text .cta-btn {
+    margin-top: 3.2rem;
 }
 
 .landing-img {
     display: flex;
-    flex: 2 1 0;
-
 }
 
 .angus {
@@ -138,11 +167,74 @@ ul.header-nav-list {
 
 .card-container {
     display: flex;
+    justify-content: space-between;
+    padding: 0 4.8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 26.4rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-img {
+    width: 25rem;
+    height: auto;
+}
+
+.card-name {
+    color: goldenrod;
+    font-size: 1.8rem;
 }
 
 .card-text {
     color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1.8rem;
+    text-align: center;
 }
+
+/* ****************  */
+/*   CTA SECTION     */
+/* ****************  */
+
+.cta-container {
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 64rem;
+    height: auto;
+    margin: 6.4rem auto;
+    padding: 1.6rem 1.6rem;
+    gap: 3.2rem;
+    border-radius: 5px;
+}
+
+.cta-text h1 {
+    font-size: 3.2rem;
+    color: goldenrod;
+}
+
+.cta-text p {
+    font-size: 1.8rem;
+    flex: 1;
+    color: #fff;
+}
+
+/* ****************  */
+/*  FOOTER SECTION   */
+/* ****************  */
+
+.footer-container {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem;
+    font-size: 1.2rem;
+}
+
