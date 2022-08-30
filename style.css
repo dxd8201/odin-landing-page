@@ -11,7 +11,7 @@ html {
 
 body {
     background: linear-gradient( purple, #0d1218 25%);
-    letter-spacing: .8px;
+    letter-spacing: .8px;    
 }
 
 /* ****************  */
@@ -36,7 +36,6 @@ body {
     align-items: center;
     padding: 0 4.8rem;
     position: relative;
-    /* background-color: rgb(121, 64, 121); */
 }
 
 .header:before {
@@ -75,6 +74,11 @@ ul.header-nav-list {
     font-weight: bold;
     letter-spacing: .1rem;
     font-size: 2.4rem;
+    padding: 1.2rem;
+    border: solid white .1rem;
+    border-radius: 5px;
+    background-color: #ffffff10;
+    box-shadow: #0d1218;
 }
 
 .landing-container {
@@ -89,6 +93,10 @@ ul.header-nav-list {
 
 .landing-text {
     width: 64rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .landing-text h1 {
@@ -122,6 +130,11 @@ ul.header-nav-list {
 
 }
 
+.btn-container {
+    width: 17.652rem;
+    height: 7.6rem;
+}
+
 .cta-btn {
     background-color: goldenrod;
     border-radius: 5px;
@@ -131,7 +144,12 @@ ul.header-nav-list {
     font-weight: bold;
     border: none;
     text-align: center;
+    display: inline-block;
     box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .landing-text .cta-btn {
@@ -176,7 +194,7 @@ ul.header-nav-list {
     flex-direction: column;
     width: 26.4rem;
     height: auto;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
 }
 
